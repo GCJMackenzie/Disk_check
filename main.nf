@@ -1,6 +1,7 @@
 nextflow.enable.dsl=2
 
 process WaitBoot {
+    container 'biocontainers/bwa:v0.7.17_cv1'
     output:
       val 'foo.txt'
 
@@ -12,6 +13,7 @@ process WaitBoot {
 }
 
 process WaitDisk {
+    container 'biocontainers/bwa:v0.7.17_cv1'
     input:
       val x
 
