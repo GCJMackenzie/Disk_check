@@ -26,7 +26,6 @@ process WaitDisk {
 }
 
 workflow {
-    data = channel.fromPath('/some/path/*.txt')
-    foo()
-    bar(data)
+    WaitBoot()
+    WaitDisk("foo")
 }
