@@ -5,7 +5,7 @@ process WaitBoot {
     output:
       val 'foo.txt'
 
-    sleep(300)
+    sleep(600)
     script:
       """
       echo "foo"
@@ -20,7 +20,7 @@ process WaitDisk {
     output:
       val 'foo.txt'
 
-    sleep(300)
+    sleep(600)
     script:
       """
       echo "foo"
